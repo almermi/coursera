@@ -1,0 +1,232 @@
+/* Basic reset and font styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation bar styling */
+.navbar {
+    position: right; /* Keeps the navbar at the top of the viewport */
+    top: 0;
+    width: 100%;
+    background-color: #001BB7;
+    color: white;
+    text-align: right;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+/* Use Flexbox to align content and navigation */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Pushes contact info to the left, links to the right */
+    align-items: center; /* Vertically aligns items in the center */
+    padding: 0 20px;
+}
+
+/* Style the contact information on the left */
+.contact-info {
+    text-align: left;
+}
+
+.contact-info .name {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.contact-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: red; /* Gold color on hover */
+}
+
+/* Main content and section styling */
+main {
+    padding-top: 70px; /* Space for the fixed navbar */
+}
+
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #666;
+}
+
+/* Styling for the skills list */
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+.skills-list dt {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-left: 4px solid #333;
+    border-radius: 5px;
+}
+
+.skills-list dd {
+    font-size: 1.1em;
+    color: #666;
+    margin: 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* --- Form Styling --- */
+#recommendation-form {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding doesn't affect total width */
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical; /* Allows user to resize the textarea vertically */
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #575757;
+}
+
+#form-response {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+    font-weight: bold;
+}
+
+/* --- Testimonials Styling --- */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #333;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+}
+
+.testimonial .author {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    text-align: right;
+}
+
+/* --- Projects Section Styling --- */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.project-item p {
+    color: #666;
+    line-height: 1.6;
+}
