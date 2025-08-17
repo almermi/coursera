@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+
+    <header class="navbar">
+    <div class="header-content">
+        <div class="contact-info">
+            <h1 class="name">Romeo Salazar</h1>
+            <p class="email">salazar.romeo@gmail.com</p>
+            <p class="number">+63 123 456 7890</p>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#about-me">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#recommendations">Recommendations</a>
+        </nav>
+    </div>
+</header>
+  
+    <main>
+        <section id="about-me">
+            <h2>About Me</h2>
+            <img src="my_profile_pic.jpg" alt="A photo of me" class="section-image">
+            <p>Welcome to my page! I'm a new to the game. But, I already have an owned accounting and payroll website. For me its time to step up. </p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+    <dl class="skills-list">
+        <dt>HTML</dt>
+        <dd>1 yr</dd>
+        <dt>CSS</dt>
+        <dd>1 yr</dd>
+        <dt>Java</dt>
+        <dd>1 yr</dd>
+        <dt>Accounting</dt>
+        <dd>10 yrs</dd>
+        <dt>Taxation</dt>
+        <dd>10 yrs</dd>
+        <dt>Auditing</dt>
+        <dd>10 yrs</dd>
+    </dl>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+        <div class="project-item">
+            <h3>Automated Task Scheduler</h3>
+            <p>A Python-based application that schedules and automates repetitive tasks. It uses a command-line interface to manage tasks, send reminders, and generate logs, improving workflow efficiency.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>E-commerce Frontend</h3>
+            <p>A responsive e-commerce website built with HTML, CSS, and JavaScript. It features a dynamic product catalog, shopping cart functionality, and user authentication, providing a smooth user experience.</p>
+        </div>
+
+        <div class="project-item">
+            <h3>Weather API Dashboard</h3>
+            <p>A web application that fetches real-time weather data from a third-party API. It displays current conditions and a 7-day forecast for any city, with a clean and intuitive user interface.</p>
+        </div>
+    </div>
+        </section>
+
+        <section id="recommendations">
+            <h2>Recommendations</h2>
+            <p>Read what others have to say about my work. I have been fortunate to collaborate with many talented people, and their feedback is a testament to my dedication and professionalism.</p>
+
+            <div class="testimonials-container">
+        <div class="testimonial">
+            <p>"Working with Romeo Salazar was a pleasure. Their dedication to the project and exceptional problem-solving skills made a significant impact on our team's success."</p>
+            <p class="author">- Jane Doe, Senior Project Manager</p>
+        </div>
+
+        <div class="testimonial">
+            <p>"Romeo Salazar is an incredibly talented and hard-working individual. Their knowledge of web development is top-notch, and they consistently exceed expectations."</p>
+            <p class="author">- John Smith, Lead Developer</p>
+        </div>
+
+        <div class="testimonial">
+            <p>"I highly recommend Romeo Salazar. They are a great collaborator and have a keen eye for detail. Their contributions were invaluable to our product's development."</p>
+            <p class="author">- Mary Johnson, CEO</p>
+        </div>
+    </div>
+
+        </section>
+
+        <section id="recommendation-form">
+            <h2>Leave a Recommendation</h2>
+            <form id="recommendationForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+            <div id="form-response"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    </html>
