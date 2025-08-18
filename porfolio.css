@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
     line-height: 1.6;
 }
 
@@ -17,7 +17,7 @@ html {
     position: right; /* Keeps the navbar at the top of the viewport */
     top: 0;
     width: 100%;
-    background-color: #001BB7;
+    background-color: purple;
     color: white;
     text-align: right;
     padding: 10px 0;
@@ -60,7 +60,9 @@ html {
 }
 
 .navbar a:hover {
-    color: red; /* Gold color on hover */
+    color: #ffd700; /* Changes font color to gold */
+    text-decoration: underline; /* Adds an underline to the text */
+    font-size: 19px; /* Slightly increases the font size */
 }
 
 /* Main content and section styling */
@@ -69,19 +71,18 @@ main {
 }
 
 section {
-    padding: 60px 20px;
-    margin: 20px 0;
+    padding: 0px 0px;
+    margin: 0px 0;
     background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+    border-radius: 0px;
+    box-shadow: 0 0px 0px white(0, 0, 0, 0);
+    max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
 
 h2 {
-    color: #333;
-    border-bottom: 2px solid #555;
+    color: purple;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
@@ -90,12 +91,34 @@ p {
     color: #666;
 }
 
+.about-me-content {
+    display: flex; /* Enables a flex container */
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 20px; /* Adds space between the image and the text */
+}
+
+.section-image {
+    /* Existing image styles */
+    max-width: 250px; /* Set a max width for the image */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.intro-text h3 {
+    margin-top: 0; /* Removes default top margin for the heading */
+    color: purple; /* Styles the new heading text */
+    font-size: 2em;
+}
+
+.intro-text p {
+    margin-top: 10px; /* Adds space between the heading and the paragraph */
+}
+
 /* Styling for the skills list */
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    /* No grid rules here; the container handles it */
     padding: 0;
+    margin: 0;
 }
 
 .skills-list dt {
@@ -117,6 +140,16 @@ p {
     border-radius: 5px;
     display: flex;
     align-items: center;
+}
+
+/* Add this new container class for consistent layout */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 800px; /* Aligns with your section's max-width */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* --- Form Styling --- */
